@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  padding: $padding;
+}
+body {
+  color: $body-color;
+}
+h2 {
+  font-size: $size;
+}
+.app__btns {
+  margin: $padding 0;
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form_btn {
+  align-self: flex-end;
+  margin-top: $padding;
+}
+.post {
+  padding: $padding;
+  border: 2px solid $color-border;
+  margin-top: $padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post_btns {
+  display: flex;
+}
+.btn {
+  padding: $padding/2 $padding;
+  background: none;
+  color: $color-btn;
+  border: 1px solid $color-btn;
+}
+.right-btn {
+  margin-left: $padding * 2;
+}
+.dialog {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+}
+.dialog__content {
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  min-width: 300px;
+  min-height: 50px;
+  padding: $padding;
+}
+.input {
+  width: 100%;
+  border: 1px solid $color-border;
+  padding: $padding/2 $padding;
+  margin-top: $padding;
+}
